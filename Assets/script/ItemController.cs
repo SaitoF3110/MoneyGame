@@ -30,7 +30,7 @@ public abstract class ItemController : MonoBehaviour
                 // コライダーを無効にする
                 GetComponent<Collider2D>().enabled = false;
                 // プレイヤーにアイテムを渡す
-                //collision.gameObject.GetComponent<PlatformerPlayerController2D>().GetItem(this);
+                collision.gameObject.GetComponent<PlayerController>().GetItem(this);
             }
         }
     }
